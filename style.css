@@ -1,0 +1,49 @@
+.container {
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem;
+  margin: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: rgb(214, 214, 214);
+}
+button:active {
+  transform: translate(0, 2px);
+}
+
+.parent {
+  padding: 1em;
+  background-color: #696cfa;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.parent:before {
+  content: 'Родительский элемент';
+  display: block;
+  margin-bottom: 1em;
+}
+
+.child {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #e83af8;
+}
+
+.child:before {
+  content: 'Дочерний элемент';
+  display: block;
+  margin-bottom: 1em;
+}
